@@ -1,29 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FileMonitor - Landing</title>
-  <!-- Vincula tu archivo CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileMonitor - Bienvenido</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Sección Izquierda: Imagen/Ilustración -->
-    <div class="left-section">
-      <!-- Reemplaza la ruta 'assets/illustration.png' con la tuya -->
-      <img src="image/bienvenida.png" alt="Persona organizando archivos">
+    <div class="app-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">FileMonitor</h2>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="nav-item">
+                            <i class="fas fa-th-large"></i>
+                            <span class="nav-text">Panel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="nav-item">
+                            <i class="fas fa-folder"></i>
+                            <span class="nav-text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html" class="nav-item">
+                            <i class="fas fa-tasks"></i>
+                            <span class="nav-text">Asignaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="files.html" class="nav-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="nav-text">Archivos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="nav-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="nav-text">Calendario</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html" class="nav-item">
+                            <i class="fas fa-bell"></i>
+                            <span class="nav-text">Notificaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-item">
+                            <i class="fas fa-cog"></i>
+                            <span class="nav-text">Ajustes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="../public/images/user-avatar.jpg" alt="Avatar de usuario">
+                </div>
+                <div class="user-info">
+                    <h3>Alex Morgan</h3>
+                    <p>Gerente de Proyecto</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <div class="welcome-container">
+                <div class="welcome-content">
+                    <h1>Bienvenido a FileMonitor</h1>
+                    <p>La plataforma colaborativa para optimizar el flujo de trabajo en la gestión, revisión y aprobación de archivos digitales.</p>
+                    
+                    <div class="welcome-actions">
+                        <a href="login.html" class="btn btn-primary">Iniciar Sesión</a>
+                        <a href="register.html" class="btn btn-outline">Registrarse</a>
+                    </div>
+                    
+                    <div class="feature-blocks">
+                        <div class="feature-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>Proyectos Colaborativos</h3>
+                            <p>Organiza tu trabajo en proyectos, asigna tareas y gestiona documentos.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-comments"></i>
+                            <h3>Comunicación en Tiempo Real</h3>
+                            <p>Comenta y colabora con tu equipo directamente en los archivos.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-bell"></i>
+                            <h3>Notificaciones Automáticas</h3>
+                            <p>Mantente al día con actualizaciones de proyectos y tareas.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-vr-cardboard"></i>
+                            <h3>Visualización con RA</h3>
+                            <p>Utiliza Realidad Aumentada para visualizar modelos de forma interactiva.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <!-- Sección Derecha: Título, subtítulo y botones -->
-    <div class="right-section">
-      <h1>FileMonitor</h1>
-      <p>Organize files intelligently and effortlessly!</p>
-      <div class="buttons">
-        <button class="register-btn" onclick="window.location.href='registro.html'">Register</button>
-        <button class="login-btn" onclick="window.location.href='iniciosecion.html'">Login</button>
-      </div>
-    </div>
-  </div>
+    <script src="js/app.js"></script>
 </body>
 </html>

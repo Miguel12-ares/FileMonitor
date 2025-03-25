@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileMonitor - Ajustes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">FileMonitor</h2>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="nav-item">
+                            <i class="fas fa-th-large"></i>
+                            <span class="nav-text">Tablero</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="nav-item">
+                            <i class="fas fa-folder"></i>
+                            <span class="nav-text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html" class="nav-item">
+                            <i class="fas fa-tasks"></i>
+                            <span class="nav-text">Asignaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="files.html" class="nav-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="nav-text">Archivos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="nav-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="nav-text">Calendario</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html" class="nav-item">
+                            <i class="fas fa-bell"></i>
+                            <span class="nav-text">Notificaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-item active">
+                            <i class="fas fa-cog"></i>
+                            <span class="nav-text">Configuración</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="image/logo.png" alt="Avatar de usuario">
+                </div>
+                <div class="user-info">
+                    <h3>Alex Morgan</h3>
+                    <p>Gerente de Proyecto</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Configuración</h1>
+            </div>
+
+            <div class="settings-tabs">
+                <button class="tab-button active">Mi Cuenta</button>
+                <button class="tab-button">Notificaciones</button>
+                <button class="tab-button">Privacidad</button>
+                <button class="tab-button">Apariencia</button>
+                <button class="tab-button">Integraciones</button>
+            </div>
+
+            <section class="settings-section">
+                <h2>Información Personal</h2>
+                
+                <div class="section-content">
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="fullName">Nombre Completo</label>
+                            <input type="text" id="fullName" value="Alex Morgan" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <div class="input-with-action">
+                                <input type="email" id="email" value="alex.morgan@company.com" class="form-input">
+                                <button type="button" class="btn-icon"><i class="fas fa-copy"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="jobTitle">Puesto de Trabajo</label>
+                            <input type="text" id="jobTitle" value="Gerente de Proyecto" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Número de Teléfono</label>
+                            <div class="input-with-action">
+                                <input type="tel" id="phone" value="+1 (555) 123-4567" class="form-input">
+                                <button type="button" class="btn-icon"><i class="fas fa-phone"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bio">Biografía</label>
+                            <textarea id="bio" class="form-textarea" rows="4">Gerente de proyectos con más de 5 años de experiencia en desarrollo de software. Apasionado por los flujos de trabajo eficientes y la colaboración en equipo.</textarea>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h2>Configuración de Seguridad</h2>
+                
+                <div class="section-content">
+                    <div class="security-options">
+                        <div class="security-option">
+                            <div class="option-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="option-details">
+                                <h3>Cambiar Contraseña</h3>
+                                <p>Último cambio hace 3 meses</p>
+                            </div>
+                            <div class="option-action">
+                                <button class="btn-arrow"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="security-option">
+                            <div class="option-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="option-details">
+                                <h3>Autenticación de Dos Factores</h3>
+                                <p>Añade una capa extra de seguridad</p>
+                            </div>
+                            <div class="option-action">
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="security-option">
+                            <div class="option-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div class="option-details">
+                                <h3>Historial de Inicio de Sesión</h3>
+                                <p>Ver actividad reciente de la cuenta</p>
+                            </div>
+                            <div class="option-action">
+                                <button class="btn-arrow"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h2>Preferencias</h2>
+                
+                <div class="section-content">
+                    <div class="preference-options">
+                        <div class="preference-option">
+                            <div class="option-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="option-details">
+                                <h3>Idioma</h3>
+                                <p>Español</p>
+                            </div>
+                            <div class="option-action">
+                                <button class="btn btn-outline btn-sm">Select</button>
+                            </div>
+                        </div>
+                        
+                        <div class="preference-option">
+                            <div class="option-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="option-details">
+                                <h3>Zona Horaria</h3>
+                                <p>Hora del Pacífico (UTC-8)</p>
+                            </div>
+                            <div class="option-action">
+                                <button class="btn btn-outline btn-sm">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

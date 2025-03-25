@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileMonitor - Proyectos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">FileMonitor</h2>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="nav-item">
+                            <i class="fas fa-th-large"></i>
+                            <span class="nav-text">Panel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="nav-item active">
+                            <i class="fas fa-folder"></i>
+                            <span class="nav-text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html" class="nav-item">
+                            <i class="fas fa-tasks"></i>
+                            <span class="nav-text">Asignaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="files.html" class="nav-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="nav-text">Archivos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="nav-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="nav-text">Calendario</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html" class="nav-item">
+                            <i class="fas fa-bell"></i>
+                            <span class="nav-text">Notificaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-item">
+                            <i class="fas fa-cog"></i>
+                            <span class="nav-text">Ajustes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="images/user-avatar.jpg" alt="Avatar de usuario">
+                </div>
+                <div class="user-info">
+                    <h3>Alex Morgan</h3>
+                    <p>Gerente de Proyecto</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Proyectos</h1>
+            </div>
+
+            <div class="project-filter-tabs">
+                <button class="tab-button active">Todos los Proyectos</button>
+                <button class="tab-button">Activos</button>
+                <button class="tab-button">Completados</button>
+                <button class="tab-button">Archivados</button>
+            </div>
+
+            <section class="projects-section">
+                <h2>Resumen de Proyectos</h2>
+                
+                <div class="section-content">
+                    <div class="project-stats">
+                        <div class="stat-card">
+                            <h3>12</h3>
+                            <p>Proyectos Totales</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>5</h3>
+                            <p>Proyectos Activos</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>3</h3>
+                            <p>Completados Este Mes</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>85%</h3>
+                            <p>Tasa de Cumplimiento</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section">
+                <h2>Proyectos Recientes</h2>
+                
+                <div class="section-content">
+                    <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3>Rediseño de Sitio Web</h3>
+                                <span class="project-status">Activo</span>
+                            </div>
+                            <div class="project-category">
+                                <span>Marketing</span>
+                            </div>
+                            <div class="project-due">
+                                <span>Vence en 5 días</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3>Desarrollo de App Móvil</h3>
+                                <span class="project-status">Activo</span>
+                            </div>
+                            <div class="project-category">
+                                <span>Desarrollo</span>
+                            </div>
+                            <div class="project-due">
+                                <span>Vence en 12 días</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3>Campaña de Marketing Q3</h3>
+                                <span class="project-status">Activo</span>
+                            </div>
+                            <div class="project-category">
+                                <span>Marketing</span>
+                            </div>
+                            <div class="project-due">
+                                <span>Vence en 20 días</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3>Lanzamiento de Producto</h3>
+                                <span class="project-status">Planificación</span>
+                            </div>
+                            <div class="project-category">
+                                <span>Producto</span>
+                            </div>
+                            <div class="project-due">
+                                <span>Vence en 30 días</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3>Informe Anual</h3>
+                                <span class="project-status">Activo</span>
+                            </div>
+                            <div class="project-category">
+                                <span>Finanzas</span>
+                            </div>
+                            <div class="project-due">
+                                <span>Vence en 45 días</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section">
+                <h2>Equipos de Proyecto</h2>
+                
+                <div class="section-content">
+                    <div class="team-list">
+                        <div class="team-item">
+                            <div class="team-avatar">
+                                <img src="images/team-marketing.jpg" alt="Equipo de Marketing">
+                            </div>
+                            <div class="team-details">
+                                <h3>Equipo de Marketing</h3>
+                                <p>8 miembros, 3 proyectos activos</p>
+                            </div>
+                            <div class="team-actions">
+                                <button class="view-button"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="team-item">
+                            <div class="team-avatar">
+                                <img src="image/team-dev.jpg" alt="Equipo de Desarrollo">
+                            </div>
+                            <div class="team-details">
+                                <h3>Equipo de Desarrollo</h3>
+                                <p>12 miembros, 5 proyectos activos</p>
+                            </div>
+                            <div class="team-actions">
+                                <button class="view-button"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="team-item">
+                            <div class="team-avatar">
+                                <img src="images/team-design.jpg" alt="Equipo de Diseño">
+                            </div>
+                            <div class="team-details">
+                                <h3>Equipo de Diseño</h3>
+                                <p>6 miembros, 2 proyectos activos</p>
+                            </div>
+                            <div class="team-actions">
+                                <button class="view-button"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="team-item">
+                            <div class="team-avatar">
+                                <img src="../public/images/team-product.jpg" alt="Equipo de Producto">
+                            </div>
+                            <div class="team-details">
+                                <h3>Equipo de Producto</h3>
+                                <p>5 miembros, 1 proyecto activo</p>
+                            </div>
+                            <div class="team-actions">
+                                <button class="view-button"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

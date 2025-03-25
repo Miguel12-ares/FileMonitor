@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileMonitor - Tareas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">FileMonitor</h2>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="nav-item">
+                            <i class="fas fa-th-large"></i>
+                            <span class="nav-text">Panel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="nav-item">
+                            <i class="fas fa-folder"></i>
+                            <span class="nav-text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html" class="nav-item active">
+                            <i class="fas fa-tasks"></i>
+                            <span class="nav-text">Tareas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="files.html" class="nav-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="nav-text">Archivos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="nav-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="nav-text">Calendario</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html" class="nav-item">
+                            <i class="fas fa-bell"></i>
+                            <span class="nav-text">Notificaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-item">
+                            <i class="fas fa-cog"></i>
+                            <span class="nav-text">Ajustes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="image/logo.png" alt="Avatar de usuario">
+                </div>
+                <div class="user-info">
+                    <h3>Alex Morgan</h3>
+                    <p>Gerente de Proyecto</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Tareas</h1>
+            </div>
+
+            <div class="task-filter-tabs">
+                <button class="tab-button active">Todas las Tareas</button>
+                <button class="tab-button">Mis Tareas</button>
+                <button class="tab-button">Asignadas a Mí</button>
+                <button class="tab-button">Completadas</button>
+            </div>
+
+            <div class="task-filter-scroll">
+                <div class="scroll-controls">
+                    <button class="scroll-left"><i class="fas fa-chevron-left"></i></button>
+                    <button class="scroll-right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <section class="tasks-section">
+                <h2>Tareas Prioritarias</h2>
+                
+                <div class="section-content">
+                    <div class="task-cards">
+                        <div class="task-card priority-high">
+                            <div class="task-priority">
+                                <i class="fas fa-exclamation"></i>
+                            </div>
+                            <div class="task-content">
+                                <h3>Finalizar Diseño de Página Principal</h3>
+                                <div class="task-meta">
+                                    <span class="task-project">Rediseño de Sitio Web</span>
+                                    <span class="task-priority-label">Alta Prioridad</span>
+                                    <span class="task-due">Vence Mañana</span>
+                                </div>
+                            </div>
+                            <div class="task-actions">
+                                <button class="edit-button"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown">
+                                    <button class="dropdown-item">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="task-card priority-high">
+                            <div class="task-priority">
+                                <i class="fas fa-exclamation"></i>
+                            </div>
+                            <div class="task-content">
+                                <h3>API Integration</h3>
+                                <div class="task-meta">
+                                    <span class="task-project">Desarrollo de App Móvil</span>
+                                    <span class="task-priority-label">Alta Prioridad</span>
+                                    <span class="task-due">Vence en 3 días</span>
+                                </div>
+                            </div>
+                            <div class="task-actions">
+                                <button class="edit-button"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown">
+                                    <button class="dropdown-item">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="task-card priority-high">
+                            <div class="task-priority">
+                                <i class="fas fa-exclamation"></i>
+                            </div>
+                            <div class="task-content">
+                                <h3>Crear Publicaciones para Redes Sociales</h3>
+                                <div class="task-meta">
+                                    <span class="task-project">Campaña de Marketing</span>
+                                    <span class="task-priority-label">Alta Prioridad</span>
+                                    <span class="task-due">Vence Hoy</span>
+                                </div>
+                            </div>
+                            <div class="task-actions">
+                                <button class="edit-button"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown">
+                                    <button class="dropdown-item">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tasks-section">
+                <h2>Próximas Tareas</h2>
+                
+                <div class="section-content">
+                    <div class="task-cards">
+                        <div class="task-card priority-medium">
+                            <div class="task-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="task-content">
+                                <h3>User Testing</h3>
+                                <div class="task-meta">
+                                    <span class="task-project">Rediseño de Sitio Web</span>
+                                    <span class="task-priority-label">Prioridad Media</span>
+                                    <span class="task-due">Vence en 5 días</span>
+                                </div>
+                            </div>
+                            <div class="task-actions">
+                                <button class="edit-button"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown">
+                                    <button class="dropdown-item">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="task-card priority-medium">
+                            <div class="task-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="task-content">
+                                <h3>Crear Documentación</h3>
+                                <div class="task-meta">
+                                    <span class="task-project">Migración de Base de Datos</span>
+                                    <span class="task-priority-label">Prioridad Media</span>
+                                    <span class="task-due">Vence en 8 días</span>
+                                </div>
+                            </div>
+                            <div class="task-actions">
+                                <button class="edit-button"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown">
+                                    <button class="dropdown-item">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="task-card priority-medium">
+                            <div class="task-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="task-content">
+                                <h3>Conducir Entrevistas de Usuario</h3>
+                                <div class="task-meta">
+                                    <span class="task-project">Investigación de Usuario</span>
+                                    <span class="task-priority-label">Prioridad Media</span>
+                                    <span class="task-due">Vence en 6 días</span>
+                                </div>
+                            </div>
+                            <div class="task-actions">
+                                <button class="edit-button"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="more-button"><i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown">
+                                    <button class="dropdown-item">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="task-detail-section">
+                <h2>Detalles de la Tarea</h2>
+                
+                <div class="breadcrumb">
+                    <span>Tareas</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Finalizar Diseño de Página Principal</span>
+                </div>
+                
+                <div class="task-detail-tabs">
+                    <button class="tab-button active">Descripción</button>
+                    <button class="tab-button">Comentarios</button>
+                    <button class="tab-button">Adjuntos</button>
+                    <button class="tab-button">Historial</button>
+                </div>
+                
+                <div class="section-content">
+                    <div class="task-description">
+                        <p>Finalizar el diseño de la página principal para el proyecto de rediseño web. Esto incluye revisar todos los elementos UI, asegurar que el diseño responsivo funcione en todos los dispositivos, y preparar los recursos para la entrega al equipo de desarrollo.</p>
+                    </div>
+                </div>
+                
+                <div class="assigned-members">
+                    <h3>Miembros Asignados</h3>
+                    
+                    <div class="member-list">
+                        <div class="member-item">
+                            <div class="member-avatar">
+                                <img src="image/logo.png" alt="John Doe">
+                            </div>
+                            <div class="member-info">
+                                <h4>John Doe</h4>
+                                <p>Diseñador Principal</p>
+                            </div>
+                            <div class="member-role">
+                                <span>Asignado</span>
+                            </div>
+                            <div class="member-actions">
+                                <button><i class="fas fa-envelope"></i></button>
+                                <button><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="member-item">
+                            <div class="member-avatar">
+                                <img src="image/logo.png" alt="Maria Garcia">
+                            </div>
+                            <div class="member-info">
+                                <h4>Maria Garcia</h4>
+                                <p>Desarrollador UI</p>
+                            </div>
+                            <div class="member-role">
+                                <span>Colaborador</span>
+                            </div>
+                            <div class="member-actions">
+                                <button><i class="fas fa-envelope"></i></button>
+                                <button><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileMonitor - Archivos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">FileMonitor</h2>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="nav-item">
+                            <i class="fas fa-th-large"></i>
+                            <span class="nav-text">Panel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="nav-item">
+                            <i class="fas fa-folder"></i>
+                            <span class="nav-text">Proyectos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html" class="nav-item">
+                            <i class="fas fa-tasks"></i>
+                            <span class="nav-text">Asignaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="files.html" class="nav-item active">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="nav-text">Archivos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="nav-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="nav-text">Calendario</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html" class="nav-item">
+                            <i class="fas fa-bell"></i>
+                            <span class="nav-text">Notificaciones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="nav-item">
+                            <i class="fas fa-cog"></i>
+                            <span class="nav-text">Ajustes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="images/user-avatar.jpg" alt="Avatar de usuario">
+                </div>
+                <div class="user-info">
+                    <h3>Alex Morgan</h3>
+                    <p>Gerente de Proyecto</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <div class="breadcrumb">
+                <a href="dashboard.html">Inicio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="files.html">Archivos</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Favoritos</span>
+            </div>
+
+            <div class="file-tabs">
+                <button class="tab-button">Todos los Archivos</button>
+                <button class="tab-button">Recientes</button>
+                <button class="tab-button">Compartidos</button>
+                <button class="tab-button active">Favoritos</button>
+            </div>
+
+            <div class="files-container">
+                <h2>Tus Favoritos</h2>
+                
+                <div class="file-list">
+                    <div class="file-item">
+                        <div class="file-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <div class="file-details">
+                            <h3>Estrategia de Marketing.pptx</h3>
+                            <span class="file-type">PPTX</span>
+                        </div>
+                        <div class="file-size">
+                            <span>5.2 MB</span>
+                        </div>
+                        <div class="file-date">
+                            <span>Añadido a favoritos hace 2 días</span>
+                        </div>
+                        <div class="file-actions">
+                            <button class="file-action-button"><i class="fas fa-download"></i></button>
+                            <button class="file-action-button"><i class="fas fa-star"></i></button>
+                            <button class="file-action-button"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="file-details">
+                            <h3>Propuesta de Proyecto.pdf</h3>
+                            <span class="file-type">PDF</span>
+                        </div>
+                        <div class="file-size">
+                            <span>2.4 MB</span>
+                        </div>
+                        <div class="file-date">
+                            <span>Añadido a favoritos hace 3 días</span>
+                        </div>
+                        <div class="file-actions">
+                            <button class="file-action-button"><i class="fas fa-download"></i></button>
+                            <button class="file-action-button"><i class="fas fa-star"></i></button>
+                            <button class="file-action-button"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="file-details">
+                            <h3>Informe Financiero Q3.pdf</h3>
+                            <span class="file-type">PDF</span>
+                        </div>
+                        <div class="file-size">
+                            <span>3.8 MB</span>
+                        </div>
+                        <div class="file-date">
+                            <span>Añadido a favoritos hace 1 semana</span>
+                        </div>
+                        <div class="file-actions">
+                            <button class="file-action-button"><i class="fas fa-download"></i></button>
+                            <button class="file-action-button"><i class="fas fa-star"></i></button>
+                            <button class="file-action-button"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">
+                            <i class="fas fa-file-image"></i>
+                        </div>
+                        <div class="file-details">
+                            <h3>Guía de Marca.ai</h3>
+                            <span class="file-type">AI</span>
+                        </div>
+                        <div class="file-size">
+                            <span>12.5 MB</span>
+                        </div>
+                        <div class="file-date">
+                            <span>Añadido a favoritos hace 2 semanas</span>
+                        </div>
+                        <div class="file-actions">
+                            <button class="file-action-button"><i class="fas fa-download"></i></button>
+                            <button class="file-action-button"><i class="fas fa-star"></i></button>
+                            <button class="file-action-button"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Añadidos Recientemente</h2>
+                
+                <div class="recent-files">
+                    <div class="recent-file-item">
+                        <div class="file-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <div class="file-details">
+                            <h3>Estrategia de Marketing.pptx</h3>
+                            <p>Añadido a favoritos hace 2 días</p>
+                        </div>
+                        <div class="file-actions">
+                            <button><i class="fas fa-download"></i></button>
+                            <button><i class="fas fa-star"></i></button>
+                            <button><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-file-item">
+                        <div class="file-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="file-details">
+                            <h3>Propuesta de Proyecto.pdf</h3>
+                            <p>Añadido a favoritos hace 3 días</p>
+                        </div>
+                        <div class="file-actions">
+                            <button><i class="fas fa-download"></i></button>
+                            <button><i class="fas fa-star"></i></button>
+                            <button><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
